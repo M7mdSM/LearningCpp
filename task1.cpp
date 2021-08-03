@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std; 
 
-bool  test (int *arr2, int &size)
+bool  IsSymmetric (int *arr2, int &size)
 {
     int count = 0;
     for (int i =0; i<size; i++)
@@ -12,14 +12,7 @@ bool  test (int *arr2, int &size)
         }
     }
 
-    if (count ==size)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
+    return (count ==size);
 }
 
 int main()
@@ -33,5 +26,5 @@ int main()
     {
         cin >> arr[i];
     }
-    cout <<boolalpha<< test(arr, size) << endl;
+    cout <<boolalpha<< IsSymmetric(arr, size) << endl;
 }
