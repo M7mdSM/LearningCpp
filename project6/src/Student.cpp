@@ -2,9 +2,8 @@
 #include <iostream>
 #include <string>
 
-    Student::Student (int id, std::string name, Date date,  int grades[3] , int size)
+    Student::Student (int id, std::string name, Date date,  int grades[] , int size)
     {
-        
         std::string str = std::to_string(id);
         int lengthofNumber = str.length();
         if(lengthofNumber!=5)
@@ -14,7 +13,8 @@
         m_id = id;
         m_name = name;
         m_date.Copy(date);
-        for (int i = 0; i< size; i++)
+        m_size = size;
+        for (int i = 0; i< m_size; i++)
         {
             m_grades[i] = grades[i];
         }
@@ -41,11 +41,13 @@
 
     void Student::Copy ( Student s)
     {
+        m_size=s.m_size;
         m_id = s.m_id;
         m_name = s.m_name;
         m_date.Copy(s.m_date);
         for (int i = 0 ; i < m_size; i++)
         {
+            m_grades[i]=0;
             m_grades[i] = s.m_grades[i];
         } 
     }

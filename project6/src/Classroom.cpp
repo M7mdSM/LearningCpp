@@ -2,10 +2,11 @@
 #include <iostream>
 
     
-Classroom::Classroom(int id, Student student[5], int class_size)
+Classroom::Classroom(int id, Student student[], int class_size)
 {
     m_id = id;
-    for (int i = 0; i< 5; i++ )
+    m_class_size = class_size;
+    for (int i = 0; i< m_class_size; i++ )
     {
         
         m_student[i].Copy(student[i]);
@@ -15,12 +16,13 @@ Classroom::Classroom(int id, Student student[5], int class_size)
 
 double Classroom::GetClassAvg()
 {
-    int sum = 0;
-    for(int i = 0; i<5; i++)
+    double sum = 0;
+    for(int i = 0; i<m_class_size; i++)
     {
         sum += m_student[i].GetAvg();
+        
     }
-    return sum/5.0;
+    return sum/m_class_size;
 }
 Student Classroom::GetBest()
 {
