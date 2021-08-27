@@ -9,6 +9,7 @@ private:
 public:
     Date () = default;
     Date (int day, int month, int year);
+    ~Date();
 
     void setDay(int day);
     void setMonth(int month);

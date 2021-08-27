@@ -20,6 +20,11 @@
         }
     }
 
+    Student::~Student()
+    {
+        std::cout << "Destructing" << '\n';
+    }
+
     double Student::GetAvg()
     {
         int sum = 0;

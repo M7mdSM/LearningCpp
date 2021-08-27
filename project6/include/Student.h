@@ -14,6 +14,7 @@ private:
 public:
     Student() = default;
     Student (int id, std::string name, Date date,  int grades[] , int size);
+    ~Student();
     double GetAvg();
     void Print();
     void Copy( Student s);

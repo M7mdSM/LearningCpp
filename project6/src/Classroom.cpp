@@ -13,6 +13,10 @@ Classroom::Classroom(int id, Student student[], int class_size)
         
     }
 }
+Classroom::~Classroom()
+    {
+        std::cout << "Destructing" << '\n';
+    }
 
 double Classroom::GetClassAvg()
 {

@@ -8,6 +8,10 @@ Date::Date (int day, int month, int year)
     m_month = month;
     m_year = year;
 }
+Date::~Date()
+    {
+        std::cout << "Destructing" << '\n';
+    }
 void Date::setDay(int day)
 {
     m_day = day;

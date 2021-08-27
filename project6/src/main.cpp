@@ -56,5 +56,6 @@ int main() {
     Classroom class_1 {1,Ss, students_size};
     std::cout << "class 1 average: " << class_1.GetClassAvg() << std::endl;
 
+    
     return 0;
 }

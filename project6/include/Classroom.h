@@ -9,6 +9,7 @@ private:
 
 public:
     Classroom(int id, Student student[], int class_size);
+    ~Classroom();
     double GetClassAvg();
     Student GetBest();
 };
