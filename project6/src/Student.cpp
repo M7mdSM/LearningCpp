@@ -22,7 +22,7 @@
 
     Student::~Student()
     {
-        std::cout << "Destructing student" << '\n';
+        
         delete[] m_grades;
     }
 

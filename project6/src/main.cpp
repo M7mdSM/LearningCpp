@@ -45,7 +45,7 @@ int main() {
             std::cin >> arr[u];
         }
         
-        Ss[i] = {s_id, s_name, s_date, arr, grades_size};
+        Ss[i].Copy({s_id, s_name, s_date, arr, grades_size});
     }
     
     
