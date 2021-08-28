@@ -22,7 +22,8 @@
 
     Student::~Student()
     {
-        std::cout << "Destructing" << '\n';
+        std::cout << "Destructing student" << '\n';
+        delete[] m_grades;
     }
 
     double Student::GetAvg()

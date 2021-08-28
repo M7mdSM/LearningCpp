@@ -10,7 +10,7 @@ Date::Date (int day, int month, int year)
 }
 Date::~Date()
     {
-        std::cout << "Destructing" << '\n';
+        std::cout << "Destructing date" << '\n';
     }
 void Date::setDay(int day)
 {
