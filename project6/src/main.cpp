@@ -19,6 +19,7 @@ int main() {
     
     for (int i = 0; i<students_size; i++)
     {
+        std::cout<<"Working..."<<std::endl;
         std::cout << "Enter the ID of the student number: "<<i+1<<std::endl;
         int s_id;
         std::cin >> s_id;
